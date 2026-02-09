@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🌟 Himanshi Sharma – Developer Portfolio
+![Portfolio Preview](./preview.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated personal portfolio built using **React, TypeScript, Vite, Tailwind CSS, and Framer Motion** to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+🔗 **Live Portfolio:**  
+https://himanshi-portfolio-two.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 Modern UI with glassmorphism design  
+- 📱 Fully Responsive (Mobile + Tablet + Desktop)  
+- ⚡ Fast performance using Vite  
+- 🎬 Smooth animations using Framer Motion  
+- 🌙 Dark / Light mode support  
+- 💼 Projects showcase with live demo links  
+- 📧 Contact section  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React  
+- TypeScript  
+- Vite  
+- Tailwind CSS  
+- Framer Motion  
+- React Icons 
+ 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Sections Included
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Hero Section  
+- About Me  
+- Skills  
+- Featured Projects  
+- Experience  
+- Education  
+- Contact  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/Himanshi8790-Sharma/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+
+
+🌐 Deployment
+
+This portfolio is deployed on Vercel.
+
+🔗 Live Link:
+https://himanshi-portfolio-two.vercel.app/
+
+
+👩‍💻 Author
+
+Himanshi Sharma
+
+🌐 Portfolio: https://himanshi-portfolio-two.vercel.app/
+
+💻 GitHub: https://github.com/Himanshi8790-Sharma/Himanshi-Portfolio
