@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
-import { HiAcademicCap, HiSparkles, HiBookOpen, HiLightningBolt } from "react-icons/hi";
-import educationImg from "../assets/expereince.png";
+import { HiAcademicCap, HiSparkles, HiBookOpen } from "react-icons/hi";
 
 const educationData = [
   {

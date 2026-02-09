@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { 
   Heart, 
@@ -7,9 +6,6 @@ import {
   MapPin, 
   Github, 
   Linkedin, 
-  Twitter,
-  Facebook,
-  Instagram,
   ArrowUp,
   Code,
   Sparkles
@@ -42,24 +38,7 @@ const Footer = () => {
       label: "LinkedIn",
       color: "hover:text-blue-600 dark:hover:text-blue-400"
     },
-    // { 
-    //   icon: Twitter, 
-    //   href: "#", 
-    //   label: "Twitter",
-    //   color: "hover:text-sky-500 dark:hover:text-sky-400"
-    // },
-    // { 
-    //   icon: Facebook, 
-    //   href: "#", 
-    //   label: "Facebook",
-    //   color: "hover:text-blue-500 dark:hover:text-blue-400"
-    // },
-    // { 
-    //   icon: Instagram, 
-    //   href: "#", 
-    //   label: "Instagram",
-    //   color: "hover:text-pink-600 dark:hover:text-pink-400"
-    // },
+   
   ];
 
   const contactInfo = [

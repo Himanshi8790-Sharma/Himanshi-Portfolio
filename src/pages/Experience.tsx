@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { HiSparkles, HiBriefcase } from "react-icons/hi";
