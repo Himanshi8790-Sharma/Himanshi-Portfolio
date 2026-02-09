@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiSparkles, HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
