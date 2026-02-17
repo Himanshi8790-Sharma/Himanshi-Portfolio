@@ -37,7 +37,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Bhawak Dashboard",
+    title: "Bthawak Dashboard",
     description:
       "A responsive admin dashboard built using React, TypeScript, and Tailwind CSS. Developed multiple report modules, designed the main dashboard UI, integrated APIs for dynamic data, and handled various UI improvements with real-time data visualization.",
     image: third,
