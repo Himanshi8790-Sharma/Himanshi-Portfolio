@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profile from "../assets/photo.jpeg";
+import profile from "../assets/himu.webp";
 import { HiSparkles, HiCode, HiHeart, HiLightningBolt } from "react-icons/hi";
 
 const About = () => {

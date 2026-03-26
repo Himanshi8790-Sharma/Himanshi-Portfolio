@@ -3,11 +3,11 @@ import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiSparkles, HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import first from "../assets/zucol.png";
-import second from "../assets/zucolold.png"
-import third from "../assets/bthawk.png"
-import forth from "../assets/paste.png"
-import fifth from "../assets/todo.png"
+import first from "../assets/zucol.webp";
+import second from "../assets/zucolold.webp"
+import third from "../assets/bthawk.webp"
+import forth from "../assets/paste.webp"
+import fifth from "../assets/tdo.webp"
 
 // Projects data
 const projectsData = [
@@ -65,18 +65,30 @@ const projectsData = [
     color: "from-teal-400 to-emerald-400",
     bgGradient: "from-teal-50 to-emerald-50",
   },
+  // {
+  //   id: 5,
+  //   title: "To-Do Application",
+  //   description:
+  //     "A responsive To-Do List app built with React and Vite featuring full CRUD operations, due date selection, and task filtering by date. Includes reusable components, clean Tailwind UI, and optional LocalStorage support for task persistence.",
+  //   image: fifth,
+  //   tags: ["React", "Vite", "Tailwind CSS", "JavaScript", "LocalStorage"],
+  //   demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
+  //   githubLink: "https://github.com/Himanshi8790-Sharma/To-do-list",
+  //   color: "from-orange-400 to-amber-400",
+  //   bgGradient: "from-orange-50 to-amber-50",
+  // },
   {
-    id: 5,
-    title: "To-Do Application",
-    description:
-      "A responsive To-Do List app built with React and Vite featuring full CRUD operations, due date selection, and task filtering by date. Includes reusable components, clean Tailwind UI, and optional LocalStorage support for task persistence.",
-    image: fifth,
-    tags: ["React", "Vite", "Tailwind CSS", "JavaScript", "LocalStorage"],
-    demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
-    githubLink: "https://github.com/Himanshi8790-Sharma/To-do-list",
-    color: "from-orange-400 to-amber-400",
-    bgGradient: "from-orange-50 to-amber-50",
-  },
+  id: 5,
+  title: "Full Stack To-Do Application",
+  description:
+    "A full-stack To-Do application built using React with TypeScript on the frontend and Node.js, Express, and MySQL on the backend. Supports complete CRUD operations, task filtering, due date management, and persistent storage using a relational database. Designed with reusable components, clean Tailwind UI, and RESTful APIs.",
+  image: fifth,
+  tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "MySQL"],
+  //demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
+  githubLink: "https://github.com/Himanshi8790-Sharma/to-do",
+  color: "from-orange-400 to-amber-400",
+  bgGradient: "from-orange-50 to-amber-50",
+}
 ];
 
 const Project = () => {
@@ -318,7 +330,7 @@ const Project = () => {
         </div>
 
         {/* View All Projects Button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -349,7 +361,7 @@ const Project = () => {
               <HiExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
           </motion.button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

@@ -2,8 +2,46 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin,  Send } from "lucide-react";
 import { HiSparkles } from "react-icons/hi";
+import emailjs  from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
+
 
 export default function Contact() {
+ const form = useRef<HTMLFormElement>(null);
+
+ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  // e.currentTarget use karne se null check ki zarurat nahi padti
+  emailjs
+    .sendForm(
+      "service_6s89uc9", 
+      "template_eg5sgag", 
+      e.currentTarget,    // Directly using the form element from the event
+      "ROGVYqY2_1LNSRHnX"
+    )
+    .then(
+      () => {
+        Swal.fire({
+  title: "Message Sent!",
+  text: "Your message has been delivered successfully 😊",
+  icon: "success",
+  confirmButtonText: "OK",
+});
+        (e.target as HTMLFormElement).reset(); // Form fields clear karne ke liye
+      },
+      (error) => {
+        Swal.fire({
+          title: "Oops!",
+          text: "Something went wrong ❌",
+          icon: "error",
+          confirmButtonText: "Try Again",
+        });
+      }
+    );
+};
+
   const contactItems = [
     {
       icon: Mail,
@@ -158,7 +196,7 @@ export default function Contact() {
 </p>
 
 
-              <form className="space-y-6">
+              <form  ref={form} onSubmit={sendEmail} className="space-y-6">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -171,6 +209,8 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="John Doe"
+                    name="name"
+                    required
                     className="w-full mt-3 p-4 rounded-2xl bg-white dark:bg-slate-700 border-2 border-purple-200 dark:border-slate-600 focus:outline-none focus:border-purple-400 dark:focus:border-purple-500 focus:ring-4 focus:ring-purple-100 dark:focus:ring-purple-900/30 transition-all text-gray-800 dark:text-slate-200 placeholder:text-gray-400 dark:placeholder:text-slate-500"
                   />
                 </motion.div>
@@ -187,6 +227,8 @@ export default function Contact() {
                   <input
                     type="email"
                     placeholder="email@example.com"
+                    name="email"
+                    required
                     className="w-full mt-3 p-4 rounded-2xl bg-white dark:bg-slate-700 border-2 border-purple-200 dark:border-slate-600 focus:outline-none focus:border-purple-400 dark:focus:border-purple-500 focus:ring-4 focus:ring-purple-100 dark:focus:ring-purple-900/30 transition-all text-gray-800 dark:text-slate-200 placeholder:text-gray-400 dark:placeholder:text-slate-500"
                   />
                 </motion.div>
@@ -203,6 +245,8 @@ export default function Contact() {
                   <textarea
                     rows={5}
                     placeholder="How can I help you?"
+                    name="message"
+                    required
                     className="w-full mt-3 p-4 rounded-2xl bg-white dark:bg-slate-700 border-2 border-purple-200 dark:border-slate-600 focus:outline-none focus:border-purple-400 dark:focus:border-purple-500 focus:ring-4 focus:ring-purple-100 dark:focus:ring-purple-900/30 transition-all resize-none text-gray-800 dark:text-slate-200 placeholder:text-gray-400 dark:placeholder:text-slate-500"
                   />
                 </motion.div>

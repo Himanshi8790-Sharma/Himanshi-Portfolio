@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { HiSparkles, HiBriefcase } from "react-icons/hi";
-import laptop from "../assets/rightiamge.jpg"; 
+import laptop from "../assets/rightiamge.webp"; 
 
 const experiences = [
   {
     id: 1,
     title: "Frontend Developer Intern",
     company: "Zucol Solutions",
-    duration: "Dec 2025 - Present",
+    duration: "Dec 2025 - Mar 2026",
     color: "from-pink-400 to-rose-400",
     bgColor: "from-pink-50 to-rose-50",
   },
