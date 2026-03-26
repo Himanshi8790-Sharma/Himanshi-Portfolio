@@ -31,7 +31,7 @@ export default function Contact() {
 });
         (e.target as HTMLFormElement).reset(); // Form fields clear karne ke liye
       },
-      (error) => {
+      () => {
         Swal.fire({
           title: "Oops!",
           text: "Something went wrong ❌",

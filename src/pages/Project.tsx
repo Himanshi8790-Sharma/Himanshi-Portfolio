@@ -1,7 +1,7 @@
 "use client";
 import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiSparkles, HiCode, HiExternalLink, HiEye } from "react-icons/hi";
+import {  HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import first from "../assets/zucol.webp";
 import second from "../assets/zucolold.webp"
