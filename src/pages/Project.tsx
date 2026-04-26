@@ -3,7 +3,7 @@ import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {  HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import first from "../assets/zucol.webp";
+import first from "../assets/expense.png";
 import second from "../assets/zucolold.webp"
 import third from "../assets/bthawk.webp"
 import forth from "../assets/paste.webp"
@@ -11,48 +11,49 @@ import fifth from "../assets/tdo.webp"
 
 // Projects data
 const projectsData = [
-  {
-    id: 1,
-    title: "Zucol Solutions Website",
-    description:
-      "Developed the Zucol Solutions corporate website with a modern, fully responsive UI using React, TypeScript, and Tailwind CSS. Worked on UI development, component structuring, API integration, and interactive animations to enhance user experience and performance.",
-    image: first,
-    tags: ["React", "TypeScript", "Tailwind CSS", "API Integration", "Framer Motion"],
-    demoLink: "https://zucolsolutions.com/",
-    githubLink: null,
-    color: "from-pink-400 to-rose-400",
-    bgGradient: "from-pink-50 to-rose-50",
-  },
+ {
+  id: 1,
+  title: "Expense Tracker Web App",
+  description:
+    "Built a full-stack Expense Tracker to manage daily income and expenses efficiently. Implemented features like adding, updating, and deleting transactions, category-wise tracking, and real-time data updates using React Query. Designed a modern and responsive UI with interactive charts to visualize spending patterns, helping users better understand and control their finances.",
+  image: first, 
+  tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "SQL", "React Query"],
+  demoLink: "", // agar live nahi hai toh empty rehne de
+  githubLink: "https://github.com/Himanshi8790-Sharma/Expense-Tracker", // abhi nahi add karna ✔
+  color: "from-cyan-400 to-blue-400",
+  bgGradient: "from-cyan-50 to-blue-50",
+},
   {
     id: 2,
-    title: "Zucol Website UI Project",
-    description:
-      "Developed the Zucol company website with an improved modern UI using React, TypeScript, and Tailwind CSS. Focused on building responsive layouts, enhancing visual design, and creating a smooth user experience to present company information and projects effectively.",
-    image: second,
-    tags: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
-    demoLink: "https://zucolsolutions.com/OLDZUCOL/index1.php",
-    githubLink: null,
-    color: "from-purple-400 to-indigo-400",
-    bgGradient: "from-purple-50 to-indigo-50",
+     title: "Full Stack To-Do Application",
+  description:
+    "A full-stack To-Do application built using React with TypeScript on the frontend and Node.js, Express, and MySQL on the backend. Supports complete CRUD operations, task filtering, due date management, and persistent storage using a relational database. Designed with reusable components, clean Tailwind UI, and RESTful APIs.",
+  image: fifth,
+  tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "MySQL"],
+  //demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
+  githubLink: "https://github.com/Himanshi8790-Sharma/to-do",
+  color: "from-orange-400 to-amber-400",
+  bgGradient: "from-orange-50 to-amber-50",
+  
   },
-  {
-    id: 3,
-    title: "Bthawk Dashboard",
-    description:
-      "A responsive admin dashboard built using React, TypeScript, and Tailwind CSS. Developed multiple report modules, designed the main dashboard UI, integrated APIs for dynamic data, and handled various UI improvements with real-time data visualization.",
-    image: third,
-    tags: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "API Integration",
-      "Dashboard UI",
-    ],
-    demoLink: null,
-    githubLink: null,
-    color: "from-blue-400 to-cyan-400",
-    bgGradient: "from-blue-50 to-cyan-50",
-  },
+  // {
+  //   id: 3,
+  //   title: "Bthawk Dashboard",
+  //   description:
+  //     "A responsive admin dashboard built using React, TypeScript, and Tailwind CSS. Developed multiple report modules, designed the main dashboard UI, integrated APIs for dynamic data, and handled various UI improvements with real-time data visualization.",
+  //   image: third,
+  //   tags: [
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "API Integration",
+  //     "Dashboard UI",
+  //   ],
+  //   demoLink: null,
+  //   githubLink: null,
+  //   color: "from-blue-400 to-cyan-400",
+  //   bgGradient: "from-blue-50 to-cyan-50",
+  // },
   {
     id: 4,
     title: "Quick Paste App",
@@ -65,29 +66,17 @@ const projectsData = [
     color: "from-teal-400 to-emerald-400",
     bgGradient: "from-teal-50 to-emerald-50",
   },
-  // {
-  //   id: 5,
-  //   title: "To-Do Application",
-  //   description:
-  //     "A responsive To-Do List app built with React and Vite featuring full CRUD operations, due date selection, and task filtering by date. Includes reusable components, clean Tailwind UI, and optional LocalStorage support for task persistence.",
-  //   image: fifth,
-  //   tags: ["React", "Vite", "Tailwind CSS", "JavaScript", "LocalStorage"],
-  //   demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
-  //   githubLink: "https://github.com/Himanshi8790-Sharma/To-do-list",
-  //   color: "from-orange-400 to-amber-400",
-  //   bgGradient: "from-orange-50 to-amber-50",
-  // },
   {
   id: 5,
-  title: "Full Stack To-Do Application",
-  description:
-    "A full-stack To-Do application built using React with TypeScript on the frontend and Node.js, Express, and MySQL on the backend. Supports complete CRUD operations, task filtering, due date management, and persistent storage using a relational database. Designed with reusable components, clean Tailwind UI, and RESTful APIs.",
-  image: fifth,
-  tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "MySQL"],
-  //demoLink: "https://to-do-list-nine-bay-94.vercel.app/",
-  githubLink: "https://github.com/Himanshi8790-Sharma/to-do",
-  color: "from-orange-400 to-amber-400",
-  bgGradient: "from-orange-50 to-amber-50",
+   title: "Zucol Website UI Project",
+    description:
+      "Developed the Zucol company website with an improved modern UI using React, TypeScript, and Tailwind CSS. Focused on building responsive layouts, enhancing visual design, and creating a smooth user experience to present company information and projects effectively.",
+    image: second,
+    tags: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
+    demoLink: "https://zucolsolutions.com/OLDZUCOL/index1.php",
+    githubLink: null,
+    color: "from-purple-400 to-indigo-400",
+    bgGradient: "from-purple-50 to-indigo-50",
 }
 ];
 

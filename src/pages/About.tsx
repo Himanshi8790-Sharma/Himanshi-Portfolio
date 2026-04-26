@@ -112,7 +112,7 @@ const About = () => {
   transition={{ delay: 0.4 }}
   className="space-y-5 text-gray-700 dark:text-slate-300 leading-relaxed text-lg"
 >
-  <p>
+  {/* <p>
     My name is{" "}
     <span className="font-bold bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
       Himanshi Sharma
@@ -136,7 +136,28 @@ const About = () => {
       Full Stack Development
     </span>{" "}
     to build complete, end-to-end web applications and contribute to impactful real-world projects.
-  </p>
+  </p> */}
+  <p>
+  My name is{" "}
+  <span className="font-bold bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+    Himanshi Sharma
+  </span>
+  , a passionate <span className="font-semibold text-purple-600 dark:text-purple-400">Full Stack Developer</span> who builds modern, scalable, and high-performance web applications. 
+  I specialize in creating seamless digital experiences with a strong focus on clean architecture, responsive design, and user-centric development.
+</p>
+
+<p>
+  I have hands-on experience working with{" "}
+  <span className="font-semibold text-purple-600 dark:text-purple-400">JavaScript</span>,{" "}
+  <span className="font-semibold text-blue-600 dark:text-blue-400">React</span>,{" "}
+  Node.js, Express, HTML, CSS, Tailwind CSS, and TypeScript. 
+  From designing intuitive frontends to developing robust backend APIs, I build complete end-to-end solutions that are efficient, scalable, and production-ready.
+</p>
+
+<p>
+  I enjoy solving real-world problems through code and continuously strive to improve my skills by building impactful projects. 
+  My goal is to develop applications that not only function flawlessly but also deliver exceptional user experiences and real business value.
+</p>
 </motion.div>
 
 

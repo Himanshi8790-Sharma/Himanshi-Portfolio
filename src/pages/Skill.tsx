@@ -12,6 +12,10 @@ export const skillsData = [
   "Bootstrap",
   "Tailwind",
   "GitHub",
+  "NodeJS",
+  "Express",
+  "MySQL",
+  "TypeScript",
 ];
 
 export const skillsImage = (skill: string) => {
@@ -25,6 +29,10 @@ export const skillsImage = (skill: string) => {
     Bootstrap: "/skills/Bootstrap.svg",
     Tailwind: "/skills/TailwindCSS-Dark.svg",
     GitHub: "/skills/Github-Dark.svg",
+    NodeJS: "/skills/nodedotjs.svg",
+    Express: "/skills/ExpressJS-Dark.svg",
+    MySQL: "/skills/MySQL-Dark.svg",
+    TypeScript: "/skills/typescript.svg",
   };
 
   return {
@@ -43,11 +51,18 @@ const skillColors: Record<string, string> = {
   Bootstrap: "from-purple-500 to-pink-500",
   Tailwind: "from-teal-400 to-cyan-400",
   GitHub: "from-gray-600 to-gray-800",
+  NodeJS: "from-purple-500 to-pink-500",
+  Express: "from-purple-500 to-pink-500",
+  MySQL: "from-blue-500 to-cyan-500",
+  TypeScript: "from-blue-400 to-indigo-400",
 };
 
 const Skill = () => {
   return (
-    <section id="skills" className="relative min-h-screen py-20 md:py-28 px-6 overflow-hidden bg-linear-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800">
+    <section
+      id="skills"
+      className="relative min-h-screen py-20 md:py-28 px-6 overflow-hidden bg-linear-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
+    >
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -155,7 +170,8 @@ const Skill = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
           {skillsData.map((skill, index) => {
             const { src } = skillsImage(skill);
-            const gradient = skillColors[skill] || "from-purple-400 to-pink-400";
+            const gradient =
+              skillColors[skill] || "from-purple-400 to-pink-400";
 
             return (
               <motion.div
@@ -249,19 +265,19 @@ const Skill = () => {
           {[
             {
               icon: HiCode,
-              number: "8+",
+              number: "10+",
               label: "Technologies",
               color: "from-pink-400 to-rose-400",
             },
             {
               icon: HiLightningBolt,
-              number: "React",
-              label: "Specialist",
+              number: "MERN",
+              label: "Stack Developer",
               color: "from-purple-400 to-indigo-400",
             },
             {
               icon: HiSparkles,
-              number: "Frontend",
+              number: "Full Stack",
               label: "Developer",
               color: "from-blue-400 to-cyan-400",
             },

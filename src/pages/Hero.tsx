@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import coderImg from "../assets/right.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiDownload, HiMail, HiSparkles } from "react-icons/hi";
-import resume from "../assets/Himanshi.pdf";
+import resume from "../assets/HimanshiSHarma.pdf";
 
 const Hero = () => {
   return (
@@ -182,7 +182,7 @@ const Hero = () => {
                 className="relative inline-block font-bold bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
-                Frontend Developer
+                 Full Stack Developer
                 <motion.span
                   className="absolute -bottom-1 left-0 w-full h-1 bg-linear-to-r from-pink-400 to-purple-400 rounded-full"
                   initial={{ scaleX: 0 }}
@@ -190,8 +190,7 @@ const Hero = () => {
                   transition={{ delay: 0.6, duration: 0.5 }}
                 />
               </motion.span>{" "}
-              passionate about turning complex problems into simple, beautiful
-              and intuitive web solutions. ✨
+             “who loves building fast, scalable web apps with clean UI, strong backend, and smooth user experiences. ✨
             </motion.p>
 
             {/* Social links */}
@@ -204,13 +203,13 @@ const Hero = () => {
               {[
                 {
                   Icon: FaGithub,
-                  href: "#",
+                  href: "https://github.com/Himanshi8790-Sharma",
                   iconColor: "text-gray-700 dark:text-slate-300",
                   hoverColor: "hover:text-gray-900 dark:hover:text-white",
                 },
                 {
                   Icon: FaLinkedin,
-                  href: "#",
+                  href: "https://www.linkedin.com/in/himanshi-sharma-414b2a35b",
                   iconColor: "text-blue-600 dark:text-blue-400",
                   hoverColor: "hover:text-blue-700 dark:hover:text-blue-300",
                 },
