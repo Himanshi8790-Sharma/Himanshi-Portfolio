@@ -5,7 +5,7 @@ import {  HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import first from "../assets/expense.png";
 import second from "../assets/zucolold.webp"
-import third from "../assets/bthawk.webp"
+// import third from "../assets/bthawk.webp"
 import forth from "../assets/paste.webp"
 import fifth from "../assets/tdo.webp"
 
