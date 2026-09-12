@@ -61,7 +61,7 @@ const Skill = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen py-20 md:py-28 px-6 overflow-hidden bg-linear-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
+      className="relative min-h-screen py-10  px-6 overflow-hidden bg-linear-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
     >
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">

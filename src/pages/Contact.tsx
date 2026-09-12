@@ -86,7 +86,7 @@ export default function Contact() {
 
 
   return (
-    <section className="relative w-full min-h-screen py-20 md:py-28 px-6 md:px-10 overflow-hidden bg-linear-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800" id="contact">
+    <section className="relative w-full min-h-screen py-15 px-6 md:px-10 overflow-hidden bg-linear-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800" id="contact">
       
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">

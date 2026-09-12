@@ -5,7 +5,7 @@ import { HiAcademicCap, HiSparkles, HiBookOpen } from "react-icons/hi";
 const educationData = [
   {
     id: 1,
-    duration: "2023 - Present",
+    duration: "2023 - 2026",
     title: "Bachelor Degree",
     degree: "BCA (Computer Application)",
     institution: "SS Jain Subodh Autonomus",
@@ -40,7 +40,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="relative min-h-screen py-20 md:py-28 px-6 overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800">
+    <section id="education" className="relative min-h-screen py-15 px-6 overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800">
       
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">

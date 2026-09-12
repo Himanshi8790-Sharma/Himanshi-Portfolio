@@ -4,15 +4,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import {  HiCode, HiExternalLink, HiEye } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import first from "../assets/expense.png";
-import second from "../assets/zucolold.webp"
-// import third from "../assets/bthawk.webp"
+// import second from "../assets/zucolold.webp"
+import third from "../assets/Loginn.png"
 import forth from "../assets/paste.webp"
 import fifth from "../assets/tdo.webp"
+import sixth from "../assets/Coffee.png"
 
 // Projects data
 const projectsData = [
- {
+  {
   id: 1,
+  title: "EMI Tracker — Loan Management Web App",
+description:
+  "A full-stack EMI and Loan Management app to manage loans, track EMIs, due dates, and payment history.",
+  image: third,
+  tags: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MySQL",
+    "JWT Auth",
+    "REST API",
+  ],
+  demoLink: "https://emi-tracker-omega.vercel.app/",
+  githubLink: "https://github.com/Himanshi8790-Sharma/EMI-Tracker",
+  color: "from-violet-400 to-fuchsia-400",
+  bgGradient: "from-violet-50 to-fuchsia-50",
+},
+ {
+  id: 2,
   title: "Expense Tracker Web App",
   description:
     "Built a full-stack Expense Tracker to manage daily income and expenses efficiently. Implemented features like adding, updating, and deleting transactions, category-wise tracking, and real-time data updates using React Query. Designed a modern and responsive UI with interactive charts to visualize spending patterns, helping users better understand and control their finances.",
@@ -24,7 +46,7 @@ const projectsData = [
   bgGradient: "from-cyan-50 to-blue-50",
 },
   {
-    id: 2,
+    id: 3,
      title: "Full Stack To-Do Application",
   description:
     "A full-stack To-Do application built using React with TypeScript on the frontend and Node.js, Express, and MySQL on the backend. Supports complete CRUD operations, task filtering, due date management, and persistent storage using a relational database. Designed with reusable components, clean Tailwind UI, and RESTful APIs.",
@@ -36,24 +58,7 @@ const projectsData = [
   bgGradient: "from-orange-50 to-amber-50",
   
   },
-  // {
-  //   id: 3,
-  //   title: "Bthawk Dashboard",
-  //   description:
-  //     "A responsive admin dashboard built using React, TypeScript, and Tailwind CSS. Developed multiple report modules, designed the main dashboard UI, integrated APIs for dynamic data, and handled various UI improvements with real-time data visualization.",
-  //   image: third,
-  //   tags: [
-  //     "React",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "API Integration",
-  //     "Dashboard UI",
-  //   ],
-  //   demoLink: null,
-  //   githubLink: null,
-  //   color: "from-blue-400 to-cyan-400",
-  //   bgGradient: "from-blue-50 to-cyan-50",
-  // },
+
   {
     id: 4,
     title: "Quick Paste App",
@@ -68,16 +73,34 @@ const projectsData = [
   },
   {
   id: 5,
-   title: "Zucol Website UI Project",
-    description:
-      "Developed the Zucol company website with an improved modern UI using React, TypeScript, and Tailwind CSS. Focused on building responsive layouts, enhancing visual design, and creating a smooth user experience to present company information and projects effectively.",
-    image: second,
-    tags: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
-    demoLink: "https://zucolsolutions.com/OLDZUCOL/index1.php",
-    githubLink: null,
-    color: "from-purple-400 to-indigo-400",
-    bgGradient: "from-purple-50 to-indigo-50",
-}
+  title: "Coffee Website",
+  description:
+    "A modern and responsive Coffee Shop landing page built using HTML, CSS, and JavaScript. Designed and developed a stylish cafe-inspired UI with smooth animations, responsive layouts, gallery sections, testimonials, and contact form UI. This project was created during my early front-end learning journey to strengthen responsive design and UI development skills.",
+  image: sixth,
+  tags: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Responsive Design",
+    "UI Design",
+  ],
+  demoLink: "https://jovial-mermaid-965074.netlify.app/",
+  githubLink: "https://github.com/Himanshi8790-Sharma/Coffee-Website",
+color: "from-fuchsia-400 to-violet-400",
+bgGradient: "from-fuchsia-50 to-violet-50",
+},
+//   {
+//   id: 6,
+//    title: "Zucol Website UI Project",
+//     description:
+//       "Developed the Zucol company website with an improved modern UI using React, TypeScript, and Tailwind CSS. Focused on building responsive layouts, enhancing visual design, and creating a smooth user experience to present company information and projects effectively.",
+//     image: second,
+//     tags: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
+//     demoLink: "https://zucolsolutions.com/OLDZUCOL/index1.php",
+//     githubLink: null,
+//     color: "from-purple-400 to-indigo-400",
+//     bgGradient: "from-purple-50 to-indigo-50",
+// }
 ];
 
 const Project = () => {
@@ -86,7 +109,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="relative min-h-screen py-20 md:py-28 px-6 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
+      className="relative min-h-screen py-15 px-6 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
     >
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">

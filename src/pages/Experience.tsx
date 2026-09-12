@@ -7,27 +7,19 @@ import laptop from "../assets/rightiamge.webp";
 const experiences = [
   {
     id: 1,
-    title: "Frontend Developer Intern",
-    company: "Zucol Solutions",
-    duration: "Dec 2025 - Mar 2026",
+    title: "Junior Full Stack Developer",
+    company: "Webflux Technologies",
+    duration: "Dec 2025 - Present",
     color: "from-pink-400 to-rose-400",
     bgColor: "from-pink-50 to-rose-50",
   },
   {
     id: 2,
-    title: "Data Management & Excel Associate",
-    company: "Sports For All (SFA)",
-    duration: "Dec 2024 - Jan 2025",
+    title: "Full Stack Developer Intern",
+    company: "Zucol Solutions",
+    duration: "Jun 2025 - Nov 2025",
     color: "from-purple-400 to-indigo-400",
     bgColor: "from-purple-50 to-indigo-50",
-  },
-  {
-    id: 3,
-    title: "Full Stack Website Developer (Academic Project)",
-    company: "College Project",
-    duration: "Dec 2023 - Jan 2024",
-    color: "from-blue-400 to-cyan-400",
-    bgColor: "from-blue-50 to-cyan-50",
   },
 ];
 
@@ -35,7 +27,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative min-h-screen py-20 md:py-28 px-6 md:px-10 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
+      className="relative min-h-screen py-15 px-6 md:px-10 overflow-hidden bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-800"
     >
       {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">
